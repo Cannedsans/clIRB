@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+def main()
+    if ARGV[0].nil?
+        puts("Erro: sem palavra para ser analizada")
+    elsif ARGV[0].to_s == ARGV[0].to_s.reverse
+        puts ("é um palindromo")
+    else 
+        puts("Não é um palindromo")
+    end
+end
+main if __FILE__ == $PROGRAM_NAME

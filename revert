@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+def main
+    begin
+        print("< ")
+        while(true)
+            input = gets.chomp
+            puts("> " + input.reverse)
+            print("< ")
+        end
+    rescue Interrupt
+        exit 0
+    end
+end
+
+main if __FILE__ == $PROGRAM_NAME

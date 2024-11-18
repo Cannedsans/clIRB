@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+def main
+    if ARGV.empty? || ARGV[1] != nil
+        puts "Imforme um arquivo para ser lido"
+        exit 0
+    else
+        File.open(ARGV[0], "r") do |arquivo|
+            conteudo = arquivo.read
+            puts conteudo
+        end
+    end
+end
+
+main if __FILE__ == $PROGRAM_NAME

@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+def main()
+    if ARGV[1] == nil
+        puts("Informe pelo menos 2 itens")
+    else
+        puts(ARGV[rand(ARGV.size)])
+    end
+end
+
+main() if __FILE__ == $PROGRAM_NAME

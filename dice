@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+def main
+  # Verifica se o argumento foi fornecido
+  if ARGV[0].nil?
+    puts("D6: #{rand(1..6)}")
+  else
+    sides = ARGV[0].to_i
+    if sides > 0 && sides%2 == 0
+      puts("D#{sides}: #{rand(1..sides)}")
+    else
+      puts("Erro: O argumento deve ser um número inteiro positivo e par!")
+    end
+  end
+end
+
+main if __FILE__ == $PROGRAM_NAME

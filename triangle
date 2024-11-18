@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+def main
+    if ARGV.empty?
+        for i in 1..5
+            x= "*"
+            x = x*i
+            p(x)
+        end
+    else
+         for i in 1..ARGV[0].to_i
+            x= "*"
+            x = x*i
+            p(x)
+        end
+    end
+end
+
+main if __FILE__ == $PROGRAM_NAME
