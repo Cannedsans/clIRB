@@ -11,7 +11,7 @@ Apenas o ruby é nescessário para o funcionamento recomendo a versão `3.0.2p10
 Os aplicativos CLI foram pensados para serem rodados no kernel linux então execute o código abaixo com o caminho no qual esteja o repositório (adicionando o comando no arquivo do seu terminal favorito para ser permanete). 
 
 ``` bash
-    export PATH="$PATH:/caminho/do/script"
+export PATH="$PATH:/caminho/do/script"
 ```
  
  ## Aplicativos 
